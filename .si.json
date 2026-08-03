@@ -1,14 +1,10 @@
 {
-  "plugin": "org.smartide.plugin.tcc",
-  "run": "tcc -run main.c",
+  "plugin": "org.smartide.plugin.editor",
+  "run": "echo 'change command from .si.json file'",
   "intelligence": {
     ".json": {
       "enabled": true,
       "run": "vscode-json-language-server --stdio"
-    },
-    ".c": {
-      "enabled": true,
-      "run": "clangd"
     },
     ".yaml": {
       "enabled": true,
