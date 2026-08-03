@@ -9,5 +9,18 @@ jobs:
         steps:
             - name: step
               uses: actions/checkout@v4
-            
+              
+            - name: install Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+            - name: setup java
+              uses: actions/setup-java@v4
+              with:
+               java-version: 17
+               distribution: temurin
+            - name: install package 
+              run: npm install 
+             
+               
               
