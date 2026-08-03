@@ -22,5 +22,10 @@ jobs:
             - name: install package 
               run: npm install 
              
-               
-              
+            - name: sync android 
+              run: |
+                 npx cap sync android 
+            - name: build APK 
+              run: |
+                   cd android
+                   ./gradlew assembleDebug   
