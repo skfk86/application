@@ -900,7 +900,7 @@ export const createErrorsReportConfig = ({
       hideChartType: false,
       defaultChartStyle: 'line',
       titleTooltip:
-        'The total number of auth errors by Supabase Auth error code from the API Gateway.',
+        'The total number of auth errors by NileBase Auth error code from the API Gateway.',
       dataProvider: async () => {
         const sql = queries.ErrorsByAuthCode(interval, filters)
         const rawData = await fetchLogs(projectRef, sql, startDate, endDate, useOtel)

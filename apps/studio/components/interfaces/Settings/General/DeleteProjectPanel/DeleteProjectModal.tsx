@@ -159,7 +159,7 @@ export const DeleteProjectModal = ({
               '[&>div>button]:data-open:text-foreground [&>div>button]:text-sm'
             )}
           >
-            <CollapsibleCardSection title="Back up your database with the Supabase CLI">
+            <CollapsibleCardSection title="Back up your database with the NileBase CLI">
               <LogicalBackupCliInstructions enabled={visible} showResetPassword={false} />
             </CollapsibleCardSection>
           </CardContent>

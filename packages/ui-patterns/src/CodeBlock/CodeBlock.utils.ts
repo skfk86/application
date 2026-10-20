@@ -48,49 +48,49 @@ export const monokaiCustomTheme = (isDarkMode: boolean) => {
       color: 'var(--primary)',
     },
     'hljs-bullet': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-subst': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-title': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
       fontWeight: 'normal',
     },
     'hljs-section': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
       fontWeight: 'normal',
     },
     'hljs-emphasis': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-type': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
       fontWeight: 'normal',
     },
     'hljs-built_in': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-builtin-name': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-selector-attr': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-selector-pseudo': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-addition': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-variable': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-template-tag': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-template-variable': {
-      color: '#3ECF8E',
+      color: '#2DD4BF',
     },
     'hljs-comment': {
       color: isDarkMode ? '#999' : '#888',

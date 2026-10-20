@@ -3,14 +3,14 @@ import gqlmin from 'gqlmin'
 import { z } from 'zod'
 
 const searchDocsInputSchema = z.object({
-  graphql_query: z.string().describe('A valid GraphQL query against the Supabase docs API.'),
+  graphql_query: z.string().describe('A valid GraphQL query against the NileBase docs API.'),
 })
 
 const CONTENT_API_URL =
   process.env.NEXT_PUBLIC_CONTENT_API_URL ?? 'https://supabase.com/docs/api/graphql'
 
 /**
- * Sends a GraphQL query to the public Supabase docs API.
+ * Sends a GraphQL query to the public NileBase docs API.
  *
  * Mirrors the @supabase/mcp-server-supabase content API client: GET
  * `<url>?query=<encoded>` with `Accept: application/json`, returning the
@@ -31,7 +31,7 @@ async function queryContentApiGraphQL(graphqlQuery: string): Promise<unknown> {
     signal: AbortSignal.timeout(10_000),
   })
   if (!response.ok) {
-    throw new Error(`Failed to fetch Supabase Content API: HTTP status ${response.status}`)
+    throw new Error(`Failed to fetch NileBase Content API: HTTP status ${response.status}`)
   }
 
   const body = (await response.json()) as {
@@ -40,7 +40,7 @@ async function queryContentApiGraphQL(graphqlQuery: string): Promise<unknown> {
   }
   if (body.errors?.length) {
     throw new Error(
-      `Supabase Content API GraphQL error: ${body.errors
+      `NileBase Content API GraphQL error: ${body.errors
         .map((error) => {
           const location = error.locations?.[0]
           return `${error.message} (line ${location?.line ?? 'unknown'}, column ${location?.column ?? 'unknown'})`
@@ -49,14 +49,14 @@ async function queryContentApiGraphQL(graphqlQuery: string): Promise<unknown> {
     )
   }
   if (!body.data) {
-    throw new Error('Supabase Content API returned no data')
+    throw new Error('NileBase Content API returned no data')
   }
 
   return body.data
 }
 
 const STATIC_DESCRIPTION =
-  'Search the Supabase documentation using GraphQL. Must be a valid GraphQL query. ' +
+  'Search the NileBase documentation using GraphQL. Must be a valid GraphQL query. ' +
   'You should default to calling this even if you think you already know the answer, ' +
   'since the documentation is always being updated.'
 
@@ -69,7 +69,7 @@ const STATIC_DESCRIPTION =
 async function loadContentApiSchema(): Promise<string> {
   const data = (await queryContentApiGraphQL('{ schema }')) as { schema?: unknown }
   if (typeof data.schema !== 'string' || !data.schema) {
-    throw new Error('Supabase Content API `{ schema }` query returned no schema string')
+    throw new Error('NileBase Content API `{ schema }` query returned no schema string')
   }
   return gqlmin(data.schema)
 }

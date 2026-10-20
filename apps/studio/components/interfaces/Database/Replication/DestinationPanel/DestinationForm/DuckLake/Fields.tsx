@@ -63,7 +63,7 @@ import { usePaginatedBucketsQuery } from '@/data/storage/buckets-query'
 const DUCKLAKE_MODE_OPTIONS = [
   {
     value: DUCKLAKE_MODE_SUPABASE,
-    label: 'Use this Supabase project',
+    label: 'Use this NileBase project',
     description:
       'Uses this project’s Postgres database and Storage. Pipelines creates the required credentials.',
   },

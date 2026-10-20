@@ -11,7 +11,7 @@ import { withAuth } from '@/hooks/misc/withAuth'
 import { buildStudioPageTitle } from '@/lib/page-title'
 import type { NextPageWithLayout } from '@/types'
 
-const PAGE_TITLE = buildStudioPageTitle({ section: 'Authorize API Access', brand: 'Supabase' })
+const PAGE_TITLE = buildStudioPageTitle({ section: 'Authorize API Access', brand: 'NileBase' })
 
 const MOCK_SCENARIOS: Record<string, { authId: string; organizationSlug?: string }> = {
   default: { authId: OAUTH_APPS_MOCK_SCENARIOS.vercelDeveloper },

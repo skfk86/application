@@ -44,7 +44,7 @@ function getRemoteMcpUrl(projectRef: string) {
 }
 
 /**
- * Creates an MCP client connected to the remote Supabase MCP server over HTTP.
+ * Creates an MCP client connected to the remote NileBase MCP server over HTTP.
  *
  * Previously the assistant instantiated the MCP server in-process and connected
  * to it via an in-memory transport. It now connects to the remote MCP server so

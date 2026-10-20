@@ -46,8 +46,8 @@ export const ForgotPasswordLayout = ({
                 <Image
                   src={
                     mounted && resolvedTheme?.includes('dark')
-                      ? `${BASE_PATH}/img/supabase-dark.svg`
-                      : `${BASE_PATH}/img/supabase-light.svg`
+                      ? `${BASE_PATH}/img/nilebase-dark.svg`
+                      : `${BASE_PATH}/img/nilebase-light.svg`
                   }
                   alt=""
                   height={24}

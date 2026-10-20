@@ -64,7 +64,7 @@ export const AIOptInModal = ({ visible, onCancel, requiredLevel, onSaved }: AIOp
         <Form {...form}>
           <form id="ai-opt-in-form" onSubmit={form.handleSubmit(onSubmit)}>
             <DialogHeader padding="small">
-              <DialogTitle>Update Supabase Assistant Opt-in Level</DialogTitle>
+              <DialogTitle>Update NileBase Assistant Opt-in Level</DialogTitle>
             </DialogHeader>
 
             <DialogSectionSeparator />

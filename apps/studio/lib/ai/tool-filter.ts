@@ -174,7 +174,7 @@ function isToolAllowed(toolName: string, aiOptInLevel: AiOptInLevel): boolean {
  */
 export function createPrivacyMessageTool(toolInstance: Tool<any, any>) {
   const privacyMessage =
-    'This tool needs a higher opt-in level than your organization has set. The opt-in level is an organization-wide setting. Call `update_opt_in_level` with the lowest level that unlocks this tool so the user can review it. By default, no data is shared. A higher level allows Supabase to send information (like schema, logs, or data) to third-party AI providers solely to generate responses.'
+    'This tool needs a higher opt-in level than your organization has set. The opt-in level is an organization-wide setting. Call `update_opt_in_level` with the lowest level that unlocks this tool so the user can review it. By default, no data is shared. A higher level allows NileBase to send information (like schema, logs, or data) to third-party AI providers solely to generate responses.'
   const condensedPrivacyMessage =
     'Requires opting in to a higher level of sharing data with third-party AI providers. Call `update_opt_in_level` to ask the user to update it.'
   const toolDescription = toolInstance.description

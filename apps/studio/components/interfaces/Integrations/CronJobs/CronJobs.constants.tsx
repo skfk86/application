@@ -40,8 +40,8 @@ export const CRONJOB_DEFINITIONS = [
   {
     value: 'edge_function',
     icon: <EdgeFunctions strokeWidth={1} />,
-    label: 'Supabase Edge Function',
-    description: 'Choose a Supabase edge function to run.',
+    label: 'NileBase Edge Function',
+    description: 'Choose a NileBase edge function to run.',
   },
 ]
 

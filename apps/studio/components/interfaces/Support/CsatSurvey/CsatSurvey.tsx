@@ -107,13 +107,13 @@ const CsatSurveyForm = ({
           render={({ field }) => (
             <FormItemLayout
               layout="vertical"
-              label="Were you satisfied with your Supabase Support Experience?"
+              label="Were you satisfied with your NileBase Support Experience?"
             >
               <FormControl>
                 <div
                   className="flex gap-2"
                   role="group"
-                  aria-label="Were you satisfied with your Supabase Support Experience?"
+                  aria-label="Were you satisfied with your NileBase Support Experience?"
                 >
                   <Button
                     type="button"

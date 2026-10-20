@@ -5,6 +5,7 @@ import '@/styles/grid.css'
 import '@/styles/markdown-preview.css'
 import '@/styles/monaco.css'
 import '@/styles/react-data-grid-logs.css'
+import '@/styles/rtl.css'
 import '@/styles/reactflow.css'
 import '@/styles/storage.css'
 import '@/styles/stripe.css'
@@ -205,9 +206,9 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
                   <TimezoneProvider>
                     <TimestampInfoTimezoneBridge>
                       <Head>
-                        <title>{appTitle ?? 'Supabase'}</title>
+                        <title>{appTitle ?? 'NileBase'}</title>
                         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                        <meta property="og:image" content={`${BASE_PATH}/img/supabase-og.png`} />
+                        <meta property="og:image" content={`${BASE_PATH}/img/nilebase-og.png`} />
                         <meta name="googlebot" content="notranslate" />
                         {/* [Alaister]: This has to be an inline style tag here and not a separate component due to next/font */}
                         <style
@@ -226,7 +227,7 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
                       </Head>
                       <MetaFaviconsPagesRouter
                         includeManifest
-                        applicationName="Supabase Studio"
+                        applicationName="NileBase Studio"
                         route={faviconRoute}
                       />
                       <TooltipProvider>

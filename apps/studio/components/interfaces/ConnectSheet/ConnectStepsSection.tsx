@@ -321,8 +321,8 @@ export function ConnectStepsSection({ steps, state, projectKeys }: ConnectStepsS
         {showSelfHostedMcpNotice && (
           <Admonition
             type="default"
-            title="MCP for self-hosted Supabase requires extra setup"
-            description="The configuration below points at the hosted Supabase MCP server. To use MCP against your self-hosted instance, follow the self-hosted MCP guide."
+            title="MCP for self-hosted NileBase requires extra setup"
+            description="The configuration below points at the hosted NileBase MCP server. To use MCP against your self-hosted instance, follow the self-hosted MCP guide."
             actions={[
               <DocsButton key="docs" href={`${DOCS_URL}/guides/self-hosting/enable-mcp`} />,
             ]}

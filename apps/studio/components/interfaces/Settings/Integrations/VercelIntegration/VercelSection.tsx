@@ -139,8 +139,8 @@ export const VercelSection = ({ isProjectScoped = false }: { isProjectScoped?: b
     'connection'
   )} `
   const description = isProjectScoped
-    ? 'Connect Vercel projects to this Supabase project. Supabase keeps environment variables up to date in each connected Vercel project.'
-    : 'Connect your Vercel teams to this Supabase organization. Supabase keeps environment variables up to date in each connected project. You can also link multiple Vercel projects to the same Supabase project.'
+    ? 'Connect Vercel projects to this NileBase project. NileBase keeps environment variables up to date in each connected Vercel project.'
+    : 'Connect your Vercel teams to this NileBase organization. NileBase keeps environment variables up to date in each connected project. You can also link multiple Vercel projects to the same NileBase project.'
 
   return (
     <PageSection id="vercel">
@@ -242,7 +242,7 @@ export const VercelSection = ({ isProjectScoped = false }: { isProjectScoped?: b
             {vercelProjectCount > 0 && vercelIntegration !== undefined && (
               <p className="text-sm text-foreground-light">
                 Your Vercel connection can access {vercelProjectCount} Vercel projects. To change
-                which projects Supabase may use, open your organization’s{' '}
+                which projects NileBase may use, open your organization’s{' '}
                 <InlineLink href={getIntegrationConfigurationUrl(vercelIntegration)}>
                   Vercel integration settings
                 </InlineLink>

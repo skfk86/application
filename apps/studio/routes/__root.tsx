@@ -213,17 +213,17 @@ if (process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENVIRONMEN
   FAVICON_ROUTE = '/favicon/local'
 }
 const THEME_COLOR = '1E1E1E'
-const APPLICATION_NAME = 'Supabase Studio'
+const APPLICATION_NAME = 'NileBase Studio'
 
 function buildRootHead(faviconRoute = FAVICON_ROUTE) {
   const meta: Array<Record<string, string>> = [
     { charSet: 'utf-8' },
     { name: 'viewport', content: 'initial-scale=1.0, width=device-width' },
-    { property: 'og:image', content: `${BASE_PATH}/img/supabase-og.png` },
+    { property: 'og:image', content: `${BASE_PATH}/img/nilebase-og.png` },
     { name: 'googlebot', content: 'notranslate' },
     { name: 'application-name', content: APPLICATION_NAME },
     { name: 'theme-color', content: `#${THEME_COLOR}` },
-    { title: 'Supabase' },
+    { title: 'NileBase' },
   ]
 
   const links: Array<Record<string, string>> = [

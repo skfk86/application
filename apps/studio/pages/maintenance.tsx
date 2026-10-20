@@ -13,18 +13,18 @@ const MaintenancePage: NextPageWithLayout = () => {
 
   const imgUrl = useMemo(
     () =>
-      isDarkMode ? `${BASE_PATH}/img/supabase-dark.svg` : `${BASE_PATH}/img/supabase-light.svg`,
+      isDarkMode ? `${BASE_PATH}/img/nilebase-dark.svg` : `${BASE_PATH}/img/nilebase-light.svg`,
     [isDarkMode]
   )
 
   return (
     <>
       <Head>
-        <title>Supabase | Under Maintenance</title>
+        <title>NileBase | Under Maintenance</title>
       </Head>
       <div className="flex flex-col items-center gap-6 text-center">
         <div className="flex items-center justify-center mb-4">
-          <img src={imgUrl} alt="Supabase" className="h-8" />
+          <img src={imgUrl} alt="NileBase" className="h-8" />
         </div>
         <div className="space-y-1">
           <h1 className="text-2xl font-medium text-foreground">Under Maintenance</h1>

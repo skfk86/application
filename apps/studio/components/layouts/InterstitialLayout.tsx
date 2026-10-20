@@ -109,7 +109,7 @@ export const InterstitialLayout = ({
 
 /**
  * Standard rounded-rect logo container (48x48).
- * Partner logos fill edge-to-edge (see `PartnerLogo`); the Supabase symbol and
+ * Partner logos fill edge-to-edge (see `PartnerLogo`); the NileBase symbol and
  * Lucide icons sit inset (sized at `size-7`).
  */
 export const LogoBox = ({ children, className }: { children: ReactNode; className?: string }) => (
@@ -162,10 +162,10 @@ export const DestinationLogo = ({ icon, name }: { icon?: ReactNode; name: string
 /** Fixed light tile chrome for Connect pairs with unclassified (uploaded) marks. */
 export const CONNECT_LOGO_LIGHT_TILE_CLASSNAME = 'border-black/10 bg-white'
 
-/** Supabase symbol (not the wordmark) rendered inset inside a LogoBox. */
+/** NileBase symbol (not the wordmark) rendered inset inside a LogoBox. */
 export const SupabaseLogo = ({ forceLight = false }: { forceLight?: boolean } = {}) => (
   <LogoBox className={forceLight ? CONNECT_LOGO_LIGHT_TILE_CLASSNAME : 'bg-surface-75'}>
-    <img alt="Supabase" src={`${BASE_PATH}/img/supabase-logo.svg`} className="size-7" />
+    <img alt="NileBase" src={`${BASE_PATH}/img/nilebase-logo.svg`} className="size-7" />
   </LogoBox>
 )
 

@@ -295,7 +295,7 @@ function createMockListExtensionsTool() {
 
 function createMockListEdgeFunctionsTool() {
   return tool({
-    description: 'Lists available Supabase Edge Functions.',
+    description: 'Lists available NileBase Edge Functions.',
     inputSchema: z.object({}),
     execute: async () => {
       return MOCK_EDGE_FUNCTIONS_DATA

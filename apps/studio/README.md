@@ -1,6 +1,6 @@
-# Supabase Studio
+# NileBase Studio
 
-A dashboard for managing your self-hosted Supabase project, and used on our [hosted platform](https://supabase.com/dashboard). Built with:
+A dashboard for managing your self-hosted NileBase project, and used on our [hosted platform](https://supabase.com/dashboard). Built with:
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
@@ -19,11 +19,11 @@ As such, the features exposed on Studio for existing deployments are limited to 
 
 ## Managing Project Settings
 
-Project settings are managed outside of the Dashboard. If you use docker compose, you should manage the settings in your docker-compose file. If you're deploying Supabase to your own cloud, you should store your secrets and env vars in a vault or secrets manager.
+Project settings are managed outside of the Dashboard. If you use docker compose, you should manage the settings in your docker-compose file. If you're deploying NileBase to your own cloud, you should store your secrets and env vars in a vault or secrets manager.
 
 ## How to contribute?
 
-For Assistant work, start with the [Supabase Assistant code guide](lib/ai/README.md) for the architecture, file map, tools, and validation workflow.
+For Assistant work, start with the [NileBase Assistant code guide](lib/ai/README.md) for the architecture, file map, tools, and validation workflow.
 
 - Branch from `master` and name your branches with the following structure
   - `{type}/{branch_name}`
@@ -36,7 +36,7 @@ For Assistant work, start with the [Supabase Assistant code guide](lib/ai/README
 ### Developer Quickstart
 
 > [!NOTE]  
-> **Supabase internal use:** To develop on Studio locally with the backend services, see the instructions in the [internal `infrastructure` repo](https://github.com/supabase/platform/blob/develop/docs/contributing.md).
+> **NileBase internal use:** To develop on Studio locally with the backend services, see the instructions in the [internal `infrastructure` repo](https://github.com/supabase/platform/blob/develop/docs/contributing.md).
 
 ```bash
 # You'll need to be on Node v22

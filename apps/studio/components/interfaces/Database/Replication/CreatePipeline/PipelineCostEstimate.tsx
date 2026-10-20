@@ -58,7 +58,7 @@ export const PipelineCostEstimate = ({
       <header className="space-y-1">
         <h3 className="text-sm text-foreground">Estimated costs</h3>
         <p className="text-sm text-foreground-light">
-          Review one-time and ongoing Supabase charges. Destination-provider charges are separate.
+          Review one-time and ongoing NileBase charges. Destination-provider charges are separate.
         </p>
       </header>
 

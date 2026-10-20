@@ -7,7 +7,7 @@ import { getDestinationById, type SignInDestination } from '@/lib/sign-in-destin
 
 export type InboundBranding = {
   /**
-   * Destination the user is signing in on the way to (e.g. the Supabase CLI), selected by the
+   * Destination the user is signing in on the way to (e.g. the NileBase CLI), selected by the
    * `destination` query param and resolved from the static `SIGN_IN_DESTINATIONS` registry. Brands
    * the screen's logo and heading.
    */
@@ -21,7 +21,7 @@ export type InboundBranding = {
 
 /**
  * Reads the branding context for users arriving at sign-in/sign-up from somewhere else, such as the
- * Supabase CLI. Both signals come straight from the URL: these screens render while the user is
+ * NileBase CLI. Both signals come straight from the URL: these screens render while the user is
  * signed out, so branding can't depend on an authenticated API lookup. (The OAuth consent screen
  * runs post-auth and brands itself dynamically by `auth_id` instead.)
  *

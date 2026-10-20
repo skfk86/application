@@ -326,7 +326,7 @@ const getAuthLogsQuery = (): SafeLogSqlFragment => safeSql`
   `
 
 /**
- * Supabase storage logs query fragment
+ * NileBase storage logs query fragment
  */
 const getSupabaseStorageLogsQuery = (): SafeLogSqlFragment => safeSql`
     select

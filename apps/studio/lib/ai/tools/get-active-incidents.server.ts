@@ -38,7 +38,7 @@ function buildActiveIncidentsMessage(
 
   const totalCount = incidentCount + maintenanceCount
 
-  return `There ${totalCount === 1 ? 'is' : 'are'} ${parts.join(' and ')} on Supabase infrastructure. If the user's issue appears related, inform them about the ongoing issue(s) and direct them to ${statusPageUrl} for real-time updates.`
+  return `There ${totalCount === 1 ? 'is' : 'are'} ${parts.join(' and ')} on NileBase infrastructure. If the user's issue appears related, inform them about the ongoing issue(s) and direct them to ${statusPageUrl} for real-time updates.`
 }
 
 export const createTool: ToolFactory<typeof contract> = (ctx) => {
@@ -48,7 +48,7 @@ export const createTool: ToolFactory<typeof contract> = (ctx) => {
     if (!IS_PLATFORM) {
       return {
         incidents: [],
-        message: 'Incident checking is only available on Supabase platform.',
+        message: 'Incident checking is only available on NileBase platform.',
       }
     }
 

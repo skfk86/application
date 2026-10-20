@@ -60,7 +60,7 @@ export const ProjectLinker = ({
     const projectDetails = selectedForeignProject
 
     if (!selectedForeignProject?.id) return console.error('No Foreign project ID set')
-    if (!selectedSupabaseProject?.ref) return console.error('No Supabase project ref set')
+    if (!selectedSupabaseProject?.ref) return console.error('No NileBase project ref set')
 
     const alreadyInstalled = flatInstalledConnectionsIds.has(foreignProjectId ?? '')
     if (alreadyInstalled) {
@@ -94,8 +94,8 @@ export const ProjectLinker = ({
 
   const noSupabaseProjects = numProjects === 0
   const noForeignProjects = foreignProjects.length === 0
-  const missingEntity = noSupabaseProjects ? 'Supabase' : mode
-  const oppositeMissingEntity = noSupabaseProjects ? mode : 'Supabase'
+  const missingEntity = noSupabaseProjects ? 'NileBase' : mode
+  const oppositeMissingEntity = noSupabaseProjects ? mode : 'NileBase'
 
   const connectDisabled =
     loadingForeignProjects ||
@@ -141,9 +141,9 @@ export const ProjectLinker = ({
           </div>
         ) : (
           <>
-            <section className="space-y-2" aria-label="Supabase project">
+            <section className="space-y-2" aria-label="NileBase project">
               <p className="text-xs font-medium uppercase tracking-wider text-foreground-light">
-                Supabase project
+                NileBase project
               </p>
               <SupabaseProjectSelector
                 open={openProjectsDropdown}
@@ -227,7 +227,7 @@ export const ProjectLinker = ({
           <div className="flex justify-center gap-0 w-full relative">
             <Panel>
               <div className="bg-white shadow-sm border rounded-sm p-1 w-12 h-12 flex justify-center items-center">
-                <img src={`${BASE_PATH}/img/supabase-logo.svg`} alt="Supabase" className="w-6" />
+                <img src={`${BASE_PATH}/img/nilebase-logo.svg`} alt="NileBase" className="w-6" />
               </div>
 
               <SupabaseProjectSelector

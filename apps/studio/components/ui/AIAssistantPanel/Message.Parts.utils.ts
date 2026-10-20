@@ -76,7 +76,7 @@ function forAdvisorType(input: unknown) {
 const TOOL_LABELS: Record<string, ToolLabels> = {
   search_docs: { running: 'Searching docs', done: 'Searched docs', detail: forDocsQuery },
   load_knowledge: { running: 'Reading up', done: 'Read up', detail: onKnowledgeTopic },
-  get_active_incidents: { running: 'Checking Supabase status', done: 'Checked Supabase status' },
+  get_active_incidents: { running: 'Checking NileBase status', done: 'Checked NileBase status' },
   list_policies: { running: 'Checking policies', done: 'Checked policies', detail: inSchemas },
   list_tables: { running: 'Listing tables', done: 'Listed tables', detail: inSchemas },
   list_extensions: { running: 'Listing extensions', done: 'Listed extensions' },

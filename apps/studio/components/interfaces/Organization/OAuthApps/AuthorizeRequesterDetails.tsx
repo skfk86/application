@@ -175,7 +175,7 @@ const PERMISSION_GROUPS: PermissionGroup[] = [
 /**
  * Connect interstitial header mark for `/authorize`.
  * Curated logos resolve from allowlisted redirect_uri hosts; otherwise pair only
- * when a usable remote icon is present, else show Supabase alone.
+ * when a usable remote icon is present, else show NileBase alone.
  *
  * Uploaded / unknown bitmaps have no light/dark metadata, so both tiles use
  * fixed light chrome (`forceLight`) across Studio themes. Curated partners keep

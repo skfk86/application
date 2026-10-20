@@ -23,7 +23,7 @@ const outputSchema = z.object({
 export const contract = {
   name: 'get_active_incidents',
   description:
-    'Check for active incidents. Use this tool when the user reports issues with any Supabase service, including the database, authentication, realtime, storage, and functions. Possible problems include, but are not limited to, connection issues, timeouts, service unavailability, authentication failures, or unexpected errors.',
+    'Check for active incidents. Use this tool when the user reports issues with any NileBase service, including the database, authentication, realtime, storage, and functions. Possible problems include, but are not limited to, connection issues, timeouts, service unavailability, authentication failures, or unexpected errors.',
   inputSchema,
   outputSchema,
   minOptInLevel: null,

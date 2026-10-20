@@ -110,9 +110,9 @@ export async function generateAssistantResponse({
       - \`pg_best_practices\` — PostgreSQL best practices. Always load before writing any SQL, even simple queries.
       - \`logs\` — ClickHouse SQL against the project's logs table. Always load before calling \`query_logs\`.
       - \`rls\` — Row Level Security policies for database tables.
-      - \`storage\` — Supabase Storage buckets, public/private bucket access, and \`storage.objects\` policies. Always load before creating Storage buckets or \`storage.objects\` policies.
-      - \`edge_functions\` — Supabase Edge Functions
-      - \`realtime\` — Supabase Realtime
+      - \`storage\` — NileBase Storage buckets, public/private bucket access, and \`storage.objects\` policies. Always load before creating Storage buckets or \`storage.objects\` policies.
+      - \`edge_functions\` — NileBase Edge Functions
+      - \`realtime\` — NileBase Realtime
     `
 
     const systemMessage: SystemModelMessage = {

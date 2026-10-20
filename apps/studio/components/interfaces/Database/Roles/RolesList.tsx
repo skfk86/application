@@ -251,7 +251,7 @@ export const RolesList = () => {
         <section aria-labelledby="supabase-service-roles">
           <div className="bg-surface-100 border border-default px-card py-3 rounded-t flex items-center space-x-4">
             <h2 id="supabase-service-roles" className="text-sm text-foreground-light">
-              Supabase service roles
+              NileBase service roles
             </h2>
             <Badge variant="success">Protected</Badge>
           </div>

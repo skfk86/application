@@ -95,7 +95,7 @@ export const PublishableApps = () => {
         <PageSectionSummary>
           <PageSectionTitle>Publishable apps</PageSectionTitle>
           <PageSectionDescription>
-            Build integrations that extend Supabase's functionality
+            Build integrations that extend NileBase's functionality
           </PageSectionDescription>
         </PageSectionSummary>
         <PageSectionAside>

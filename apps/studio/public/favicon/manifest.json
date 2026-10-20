@@ -1,7 +1,7 @@
 {
-  "name": "Supabase Studio",
-  "short_name": "Supabase",
-  "description": "The Postgres Development Platform.",
+  "name": "NileBase Studio",
+  "short_name": "NileBase",
+  "description": "منصة تطوير قواعد البيانات - NileBase",
   "display_override": [
     "minimal-ui"
   ],

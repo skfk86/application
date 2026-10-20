@@ -186,7 +186,7 @@ export const OAuthAppsAuthorizeScreen = ({
       <InterstitialLayout
         logo={<DestinationLogo name={request.name} />}
         title={`Authorize ${request.name}`}
-        description="This application wants to access your Supabase Account"
+        description="This application wants to access your NileBase Account"
       >
         <div className="flex flex-col gap-6 px-6 pb-6">
           <AlertError subject="An error occurred while loading your data" error={identityError} />
@@ -200,7 +200,7 @@ export const OAuthAppsAuthorizeScreen = ({
       <InterstitialLayout
         logo={<DestinationLogo name={request.name} />}
         title={`Authorize ${request.name}`}
-        description="This application wants to access your Supabase Account"
+        description="This application wants to access your NileBase Account"
       >
         <div className="flex flex-col gap-6 px-6 pb-6">
           <AlertError subject="An error occurred while loading your data" error={errorAppDetails} />
@@ -214,7 +214,7 @@ export const OAuthAppsAuthorizeScreen = ({
       <InterstitialLayout
         logo={<DestinationLogo name={request.name} />}
         title={`Authorize ${request.name}`}
-        description="This application wants to access your Supabase Account"
+        description="This application wants to access your NileBase Account"
       >
         <div className="flex flex-col gap-6 px-6 pb-6">
           <AlertError
@@ -297,7 +297,7 @@ export const OAuthAppsAuthorizeScreen = ({
             . It's now asking for different access.
           </>
         ) : (
-          'This application wants to access your Supabase Account'
+          'This application wants to access your NileBase Account'
         )
       }
     >

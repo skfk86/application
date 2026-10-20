@@ -99,7 +99,7 @@ export const FRAMEWORKS: ConnectionType[] = [
         children: [
           {
             key: 'supabasejs',
-            label: 'Supabase-js',
+            label: 'NileBase-js',
             children: [],
             icon: 'supabase',
           },
@@ -115,7 +115,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -134,7 +134,7 @@ export const FRAMEWORKS: ConnectionType[] = [
         children: [
           {
             key: 'supabasejs',
-            label: 'Supabase-js',
+            label: 'NileBase-js',
             children: [],
             icon: 'supabase',
           },
@@ -163,7 +163,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -177,7 +177,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -192,7 +192,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -206,7 +206,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -220,7 +220,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -234,7 +234,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -248,7 +248,7 @@ export const FRAMEWORKS: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -326,7 +326,7 @@ export const MOBILES: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -354,7 +354,7 @@ export const MOBILES: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },
@@ -396,7 +396,7 @@ export const MOBILES: ConnectionType[] = [
     children: [
       {
         key: 'supabasejs',
-        label: 'Supabase-js',
+        label: 'NileBase-js',
         children: [],
         icon: 'supabase',
       },

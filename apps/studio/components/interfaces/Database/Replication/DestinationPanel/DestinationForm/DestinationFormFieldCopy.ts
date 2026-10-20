@@ -1,6 +1,6 @@
 export const PIPELINE_NAME_FIELD_COPY = {
   label: 'Pipeline name',
-  description: 'Used to identify this pipeline in Supabase.',
+  description: 'Used to identify this pipeline in NileBase.',
 } as const
 
 export const BIGQUERY_PROJECT_ID_FIELD_COPY = {

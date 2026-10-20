@@ -9,7 +9,7 @@ import type { NextPageWithLayout } from '@/types'
 
 const PAGE_TITLE = buildStudioPageTitle({
   section: 'Customer Satisfaction Survey',
-  brand: 'Supabase',
+  brand: 'NileBase',
 })
 
 /**

@@ -110,7 +110,7 @@ export const DestinationTypeSelection = () => {
         {
           value: 'Analytics Bucket',
           label: 'Analytics Bucket',
-          description: 'Replicate changes to Supabase Storage as Apache Iceberg tables',
+          description: 'Replicate changes to NileBase Storage as Apache Iceberg tables',
           stage: 'Deprecated',
           enabled: isOptionVisible('Analytics Bucket', etlEnableIceberg),
         },

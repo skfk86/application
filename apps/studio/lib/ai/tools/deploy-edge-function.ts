@@ -10,7 +10,7 @@ const inputSchema = z.object({
 export const contract = {
   name: 'deploy_edge_function',
   description:
-    'Asks the user to deploy a Supabase Edge Function from provided code. Requires user approval before deploying.',
+    'Asks the user to deploy a NileBase Edge Function from provided code. Requires user approval before deploying.',
   inputSchema,
   outputSchema: z.object({ success: z.boolean() }),
   minOptInLevel: null,

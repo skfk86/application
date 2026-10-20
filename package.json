@@ -1,16 +1,16 @@
 {
-  "name": "supabase",
-  "description": "The Postgres Development Platform.",
+  "name": "nilebase",
+  "description": "NileBase — an Arabic-first Postgres development dashboard, based on Supabase Studio (Apache-2.0).",
   "version": "0.0.0",
-  "author": "Supabase, Inc.",
+  "author": "NileBase",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
     "build:studio": "turbo run build --filter=studio",
-    "build:studio:docker": "docker build . -f apps/studio/Dockerfile --target production -t supabase-studio:local --build-arg NEXT_PUBLIC_STUDIO_AUTH_MODE=supabase --no-cache",
-    "build:studio:docker:tanstack": "docker build . -f apps/studio/Dockerfile --target production -t supabase-studio:local-tanstack --build-arg NEXT_PUBLIC_STUDIO_AUTH_MODE=supabase --build-arg STUDIO_FRAMEWORK=tanstack --no-cache",
+    "build:studio:docker": "docker build . -f apps/studio/Dockerfile --target production -t nilebase-studio:local --build-arg NEXT_PUBLIC_STUDIO_AUTH_MODE=supabase --no-cache",
+    "build:studio:docker:tanstack": "docker build . -f apps/studio/Dockerfile --target production -t nilebase-studio:local-tanstack --build-arg NEXT_PUBLIC_STUDIO_AUTH_MODE=supabase --build-arg STUDIO_FRAMEWORK=tanstack --no-cache",
     "build:design-system": "turbo run build --filter=design-system",
     "build:docs": "turbo run build --filter=docs",
     "build:kb": "turbo run build --filter=kb",
@@ -84,6 +84,13 @@
     "pnpm": "11.13",
     "node": ">=22.13"
   },
-  "keywords": ["postgres", "firebase", "storage", "functions", "database", "auth"],
+  "keywords": [
+    "postgres",
+    "firebase",
+    "storage",
+    "functions",
+    "database",
+    "auth"
+  ],
   "packageManager": "pnpm@11.13.1"
 }

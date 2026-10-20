@@ -14,7 +14,7 @@ export const CHART_COLORS = {
 }
 
 const LIGHT_STACKED_CHART_COLORS = [
-  '#3ECF8E',
+  '#2DD4BF',
   '#DA760B',
   '#097c4f',
   '#EDC35E',
@@ -36,7 +36,7 @@ const LIGHT_STACKED_CHART_FILLS = [
 ]
 
 const DARK_STACKED_CHART_COLORS = [
-  '#3ECF8E',
+  '#2DD4BF',
   '#A3FFC2',
   '#DA760B',
   '#EDD35E',

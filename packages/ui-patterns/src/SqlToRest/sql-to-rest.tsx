@@ -64,8 +64,8 @@ export default function SqlToRest({
     if (monaco) {
       const lightMode = getTheme(false)
       const darkMode = getTheme(true)
-      monaco.editor.defineTheme('supabase-light', lightMode)
-      monaco.editor.defineTheme('supabase-dark', darkMode)
+      monaco.editor.defineTheme('nilebase-light', lightMode)
+      monaco.editor.defineTheme('nilebase-dark', darkMode)
     }
   }, [monaco])
 
@@ -269,7 +269,7 @@ export default function SqlToRest({
         >
           <Editor
             language="pgsql"
-            theme={isDark ? 'supabase-dark' : 'supabase-light'}
+            theme={isDark ? 'nilebase-dark' : 'nilebase-light'}
             value={sql}
             options={{
               tabSize: 2,

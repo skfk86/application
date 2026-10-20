@@ -43,7 +43,7 @@ export type DucklakeManualDestinationConfig = {
   metadataSchema?: string
 }
 
-// "Use Supabase" DuckLake: caller provides Supabase project refs and a bucket; the platform
+// "Use NileBase" DuckLake: caller provides NileBase project refs and a bucket; the platform
 // API resolves these into a catalog URL + provisioned S3 credentials before persisting.
 export type DucklakeSupabaseDestinationConfig = {
   catalogProjectRef: string

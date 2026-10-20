@@ -25,7 +25,7 @@ const MAX_RETRIES = 2
 export type StatusPageResult = { data: StatusPageResponse; isDegraded: boolean }
 
 const EMPTY_STATUS_PAGE: StatusPageResponse = {
-  page_title: 'Supabase Status',
+  page_title: 'NileBase Status',
   page_url: 'https://status.supabase.com/',
   ongoing_incidents: [],
   in_progress_maintenances: [],

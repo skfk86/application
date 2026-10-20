@@ -12,7 +12,7 @@ const inputSchema = z.object({
 export const contract = {
   name: 'load_knowledge',
   description:
-    'Load detailed knowledge about a Supabase topic before answering questions about it.',
+    'Load detailed knowledge about a NileBase topic before answering questions about it.',
   inputSchema,
   outputSchema: z.string(),
   minOptInLevel: null,

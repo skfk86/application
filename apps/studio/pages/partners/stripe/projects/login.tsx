@@ -26,7 +26,7 @@ import { buildStudioPageTitle } from '@/lib/page-title'
 import { useProfileNameAndPicture } from '@/lib/profile'
 import type { NextPageWithLayout } from '@/types'
 
-const PAGE_TITLE = buildStudioPageTitle({ section: 'Authorize Stripe Projects', brand: 'Supabase' })
+const PAGE_TITLE = buildStudioPageTitle({ section: 'Authorize Stripe Projects', brand: 'NileBase' })
 
 export const StripeProjectsLoginPage: NextPageWithLayout = () => {
   const router = useRouter()
@@ -81,7 +81,7 @@ export const StripeProjectsLoginPage: NextPageWithLayout = () => {
   const showAuthorizationState = isSuccess && !isConfirmed
   const interstitialDescription = isConfirmed
     ? undefined
-    : 'This will create an organization on your behalf in Supabase'
+    : 'This will create an organization on your behalf in NileBase'
 
   return (
     <>

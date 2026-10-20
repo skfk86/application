@@ -2,7 +2,7 @@ import { TerminalIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
 
 /**
- * A destination the user is signing in on the way to (e.g. the Supabase CLI). Destinations brand
+ * A destination the user is signing in on the way to (e.g. the NileBase CLI). Destinations brand
  * the sign-in/sign-up screens but are independent of identity providers: a destination may not have
  * a matching sign-in button at all.
  *
@@ -14,13 +14,13 @@ export type SignInDestination = {
   /** Matches the `destination` query param that leads to this destination. */
   id: string
   displayName: string
-  /** Mark rendered inset in a LogoBox next to the Supabase logo. */
+  /** Mark rendered inset in a LogoBox next to the NileBase logo. */
   icon?: ReactNode
 }
 
 const CLI_DESTINATION: SignInDestination = {
   id: 'cli',
-  displayName: 'Supabase CLI',
+  displayName: 'NileBase CLI',
   icon: <TerminalIcon className="size-6 text-foreground" strokeWidth={2} />,
 }
 

@@ -3,7 +3,7 @@ import * as z from 'zod'
 export type ThemeOverrideKey = 'primaryHue' | 'chroma' | 'contrast' | 'surface' | 'elevationStep'
 export type ThemeOverrideMode = 'dark' | 'light'
 
-/** ConfigCat flag: Spot color control (employee-only via Supabase Team Email segment). */
+/** ConfigCat flag: Spot color control (employee-only via NileBase Team Email segment). */
 export const APPEARANCE_SPOT_COLOR_FLAG = 'appearanceSpotColor'
 
 type ThemeOverrideRange = { min: number; max: number }

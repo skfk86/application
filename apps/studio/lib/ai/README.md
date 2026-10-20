@@ -1,4 +1,4 @@
-# Supabase Assistant code guide
+# NileBase Assistant code guide
 
 Start here when working on the Assistant in Studio. This guide maps the implementation for contributors and coding agents. Follow [Studio's agent instructions](../../AGENTS.md) and load the skills that apply to your change.
 

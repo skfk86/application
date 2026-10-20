@@ -111,7 +111,7 @@ export const getFallbackTools = ({
           .join('\n')
 
         return stripIndent`
-          You're a Supabase Postgres expert in writing row level security policies. Your purpose is to
+          You're a NileBase Postgres expert in writing row level security policies. Your purpose is to
           generate a policy with the constraints given by the user. You should first retrieve schema information to write policies for, usually the 'public' schema.
 
           The output should use the following instructions:
@@ -137,11 +137,11 @@ export const getFallbackTools = ({
           CREATE POLICY "My descriptive policy." ON books FOR INSERT to authenticated USING ( (select auth.uid()) = author_id ) WITH ( true );
           \`\`\`
 
-          Since you are running in a Supabase environment, take note of these Supabase-specific additions:
+          Since you are running in a NileBase environment, take note of these NileBase-specific additions:
 
           ## Authenticated and unauthenticated roles
 
-          Supabase maps every request to one of the roles:
+          NileBase maps every request to one of the roles:
 
           - \`anon\`: an unauthenticated request (the user is not logged in)
           - \`authenticated\`: an authenticated request (the user is logged in)
@@ -214,7 +214,7 @@ export const getFallbackTools = ({
 
           ## Helper functions
 
-          Supabase provides some helper functions that make it easier to write Policies.
+          NileBase provides some helper functions that make it easier to write Policies.
 
           ### \`auth.uid()\`
 
@@ -395,13 +395,13 @@ export const getFallbackTools = ({
       },
     }),
     getEdgeFunctionKnowledge: tool({
-      description: 'Get knowledge about how to write edge functions for Supabase',
+      description: 'Get knowledge about how to write edge functions for NileBase',
       inputSchema: z.object({}),
       execute: async ({}) => {
         return stripIndent`
-        # Writing Supabase Edge Functions
+        # Writing NileBase Edge Functions
 
-        You're an expert in writing TypeScript and Deno JavaScript runtime. Generate **high-quality Supabase Edge Functions** that adhere to the following best practices:
+        You're an expert in writing TypeScript and Deno JavaScript runtime. Generate **high-quality NileBase Edge Functions** that adhere to the following best practices:
 
         ## Guidelines
 
@@ -411,7 +411,7 @@ export const getFallbackTools = ({
         4. For external dependencies, importing via \`npm:\` and \`jsr:\` is preferred. Minimize the use of imports from @\`deno.land/x\` , \`esm.sh\` and @\`unpkg.com\` . If you have a package from one of those CDNs, you can replace the CDN hostname with \`npm:\` specifier.
         5. You can also use Node built-in APIs. You will need to import them using \`node:\` specifier. For example, to import Node process: \`import process from "node:process"\`. Use Node APIs when you find gaps in Deno APIs.
         6. Do NOT use \`import { serve } from "https://deno.land/std@0.168.0/http/server.ts"\`. Instead use the built-in \`Deno.serve\`.
-        7. Following environment variables (ie. secrets) are pre-populated in both local and hosted Supabase environments. Users don't need to manually set them:
+        7. Following environment variables (ie. secrets) are pre-populated in both local and hosted NileBase environments. Users don't need to manually set them:
           * SUPABASE_URL
           * SUPABASE_ANON_KEY
           * SUPABASE_SERVICE_ROLE_KEY
@@ -426,7 +426,7 @@ export const getFallbackTools = ({
         ### Simple Hello World Function
 
         \`\`\`edge
-        // Setup type definitions for built-in Supabase Runtime APIs
+        // Setup type definitions for built-in NileBase Runtime APIs
         import "jsr:@supabase/functions-js/edge-runtime.d.ts";
         interface reqPayload {
           name: string;
@@ -450,7 +450,7 @@ export const getFallbackTools = ({
         ### Example Function using Node built-in API
 
         \`\`\`edge
-        // Setup type definitions for built-in Supabase Runtime APIs
+        // Setup type definitions for built-in NileBase Runtime APIs
         import "jsr:@supabase/functions-js/edge-runtime.d.ts";
         import { randomBytes } from "node:crypto";
         import { createServer } from "node:http";
@@ -475,14 +475,14 @@ export const getFallbackTools = ({
         ### Using npm packages in Functions
 
         \`\`\`edge
-        // Setup type definitions for built-in Supabase Runtime APIs
+        // Setup type definitions for built-in NileBase Runtime APIs
         import "jsr:@supabase/functions-js/edge-runtime.d.ts";
         import express from "npm:express@4.18.2";
 
         const app = express();
 
         app.get(/(.*)/, (req, res) => {
-          res.send("Welcome to Supabase");
+          res.send("Welcome to NileBase");
         });
 
         app.listen(8000);
@@ -491,7 +491,7 @@ export const getFallbackTools = ({
         ### Generate embeddings using built-in @Supabase.ai API
 
         \`\`\`edge
-        // Setup type definitions for built-in Supabase Runtime APIs
+        // Setup type definitions for built-in NileBase Runtime APIs
         import "jsr:@supabase/functions-js/edge-runtime.d.ts";
         const model = new Supabase.ai.Session('gte-small');
 
@@ -511,10 +511,10 @@ export const getFallbackTools = ({
         });
         \`\`\`
 
-        ## Integrating with Supabase Auth
+        ## Integrating with NileBase Auth
 
         \`\`\`edge
-          // Setup type definitions for built-in Supabase Runtime APIs
+          // Setup type definitions for built-in NileBase Runtime APIs
           import "jsr:@supabase/functions-js/edge-runtime.d.ts";
           import { createClient } from \\'jsr:@supabase/supabase-js@2\\'
           import { corsHeaders } from \\'../_shared/cors.ts\\'
@@ -528,11 +528,11 @@ export const getFallbackTools = ({
             }
 
             try {
-              // Create a Supabase client with the Auth context of the logged in user.
+              // Create a NileBase client with the Auth context of the logged in user.
               const supabaseClient = createClient(
-                // Supabase API URL - env var exported by default.
+                // NileBase API URL - env var exported by default.
                 Deno.env.get('SUPABASE_URL')!,
-                // Supabase API ANON KEY - env var exported by default.
+                // NileBase API ANON KEY - env var exported by default.
                 Deno.env.get('SUPABASE_ANON_KEY')!,
                 // Create client with Auth context of the user that called the function.
                 // This way your row-level-security (RLS) policies are applied.

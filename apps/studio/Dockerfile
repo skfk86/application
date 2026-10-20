@@ -60,6 +60,9 @@ CMD ["pnpm", "dev:studio"]
 
 # Compile Next.js
 FROM dev AS build-next
+# NileBase: set to "ar" at image build time for Arabic / RTL (see pages/_document.tsx).
+ARG NEXT_PUBLIC_UI_LOCALE=en
+ENV NEXT_PUBLIC_UI_LOCALE=$NEXT_PUBLIC_UI_LOCALE
 RUN pnpm --filter studio exec next build
 
 # Assemble the runtime tree at /srv in the layout the production stage

@@ -24,7 +24,7 @@ interface IntegrationInstallationProps extends RefAttributes<HTMLLIElement> {
   disabled?: boolean
 }
 
-type HandleIconType = Integration['integration']['name'] | 'Supabase'
+type HandleIconType = Integration['integration']['name'] | 'NileBase'
 
 const HandleIcon = ({ type, className }: { type: HandleIconType; className?: string }) => {
   switch (type) {
@@ -47,8 +47,8 @@ const HandleIcon = ({ type, className }: { type: HandleIconType; className?: str
       )
 
       break
-    case 'Supabase':
-      return <img src={`${BASE_PATH}/img/supabase-logo.svg`} alt="Supabase" className="w-3.5"></img>
+    case 'NileBase':
+      return <img src={`${BASE_PATH}/img/nilebase-logo.svg`} alt="NileBase" className="w-3.5"></img>
       break
 
     default:
@@ -184,7 +184,7 @@ export const IntegrationConnection = forwardRef<HTMLLIElement, IntegrationConnec
           <div className="flex flex-col gap-1 min-w-0">
             <div className="flex items-center gap-2">
               <div className="shrink-0 flex gap-x-2 items-center max-w-40 ">
-                <HandleIcon type={'Supabase'} />
+                <HandleIcon type={'NileBase'} />
                 <span title={project?.name} className="text-sm truncate">
                   {project?.name}
                 </span>
@@ -257,7 +257,7 @@ export const IntegrationConnectionOption = forwardRef<HTMLLIElement, Integration
       >
         <div className="flex flex-col gap-1">
           <div className="flex gap-2 items-center">
-            <HandleIcon type={'Supabase'} />
+            <HandleIcon type={'NileBase'} />
             <span className="text-sm">{project?.name}</span>
             <ArrowRightIcon size={14} className="text-foreground-lighter" strokeWidth={1.5} />
             <HandleIcon type={type} />

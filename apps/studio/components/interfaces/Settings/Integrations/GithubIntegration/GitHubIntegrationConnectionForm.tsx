@@ -636,12 +636,12 @@ export const GitHubIntegrationConnectionForm = ({
                           render={({ field }) => (
                             <FormItemLayout
                               layout="flex-row-reverse"
-                              label="Supabase changes only"
-                              description="Only create branches when Supabase files change"
+                              label="NileBase changes only"
+                              description="Only create branches when NileBase files change"
                             >
                               <FormControl>
                                 <Switch
-                                  aria-label="Toggle Supabase changes only"
+                                  aria-label="Toggle NileBase changes only"
                                   checked={!hasAccessToBranching ? false : field.value}
                                   onCheckedChange={(val) => field.onChange(val)}
                                   disabled={
@@ -725,7 +725,7 @@ export const GitHubIntegrationConnectionForm = ({
         loading={isUpdatingConnection}
       >
         <p className="text-sm text-foreground-light">
-          Open pull requests will only update your Supabase project on merge if the git base branch
+          Open pull requests will only update your NileBase project on merge if the git base branch
           matches this new production git branch.
         </p>
       </ConfirmationModal>
@@ -743,7 +743,7 @@ export const GitHubIntegrationConnectionForm = ({
         <div className="space-y-3">
           <p className="text-sm text-foreground-light">
             This will disconnect your current repository and create a new connection with the
-            selected repository. All existing Supabase branches that are connected to the old
+            selected repository. All existing NileBase branches that are connected to the old
             repository will no longer be synced.
           </p>
         </div>

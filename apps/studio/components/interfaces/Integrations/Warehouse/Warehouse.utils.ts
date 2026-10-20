@@ -29,7 +29,7 @@ export function getSchemaTableKey(schema: string, table: string): string {
 
 /**
  * Internal schemas that still hold product data users legitimately want in their warehouse.
- * Everything else in `INTERNAL_SCHEMAS` is Supabase infrastructure: `vault` (secrets),
+ * Everything else in `INTERNAL_SCHEMAS` is NileBase infrastructure: `vault` (secrets),
  * `pgsodium`, `cron`/`pgmq` bookkeeping, and migration history. These should never be offered as a
  * replication target.
  */

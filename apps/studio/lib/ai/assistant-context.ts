@@ -28,7 +28,7 @@ export type AssistantContextMessage = { role: 'assistant'; content: string }
  */
 function buildLogsSnippetContext(): string {
   return [
-    "Some SQL snippets are marked with the dialect 'clickhouse', which means they query the Supabase logs backend, not the Postgres database. Any SQL you write, edit, or debug for that snippet must be ClickHouse SQL against the logs table described below — the database schema and the Postgres tools don't apply to it. To run a logs query, load `logs` knowledge then call `query_logs`; do not use `execute_sql`. Postgres SQL is still the right answer for anything else the user asks about their database, or for non-ClickHouse marked queries.",
+    "Some SQL snippets are marked with the dialect 'clickhouse', which means they query the NileBase logs backend, not the Postgres database. Any SQL you write, edit, or debug for that snippet must be ClickHouse SQL against the logs table described below — the database schema and the Postgres tools don't apply to it. To run a logs query, load `logs` knowledge then call `query_logs`; do not use `execute_sql`. Postgres SQL is still the right answer for anything else the user asks about their database, or for non-ClickHouse marked queries.",
     CLICKHOUSE_LOGS_COMPLETION_INSTRUCTIONS.trim(),
     buildClickhouseLogsSchemaSection().trim(),
   ].join('\n\n')

@@ -57,7 +57,7 @@ const PipelineCreationPage: NextPageWithLayout<Record<string, never>> = () => {
   return (
     <>
       <Head>
-        <title>New Pipeline | Supabase</title>
+        <title>New Pipeline | NileBase</title>
       </Head>
       <PipelineCreationFlow
         availableDestinations={[

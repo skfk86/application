@@ -1,10 +1,16 @@
-import { Manrope } from 'next/font/google'
+import { Manrope, Noto_Sans_Arabic } from 'next/font/google'
 import localFont from 'next/font/local'
 
 export const manrope = Manrope({
   variable: '--font-manrope',
   display: 'swap',
   subsets: ['latin'],
+})
+
+export const notoArabic = Noto_Sans_Arabic({
+  variable: '--font-arabic',
+  display: 'swap',
+  subsets: ['arabic'],
 })
 
 export const inter = localFont({

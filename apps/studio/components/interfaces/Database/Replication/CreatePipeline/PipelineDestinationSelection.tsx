@@ -15,7 +15,7 @@ const DESTINATIONS: { type: PipelineDestinationType; description: string }[] = [
   { type: 'ClickHouse', description: 'Replicate changes to ClickHouse for real-time analytics' },
   {
     type: 'Analytics Bucket',
-    description: 'Replicate changes to Supabase Storage as Apache Iceberg tables',
+    description: 'Replicate changes to NileBase Storage as Apache Iceberg tables',
   },
 ]
 

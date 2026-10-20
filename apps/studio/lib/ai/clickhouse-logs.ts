@@ -1,5 +1,5 @@
 /**
- * Everything the model needs to know about the ClickHouse-backed Supabase `logs`
+ * Everything the model needs to know about the ClickHouse-backed NileBase `logs`
  * table, in one place. Both ClickHouse completion flows — the inline "edit this
  * query" path and the whole-query BigQuery rewrite — are assembled from these,
  * server-side in `pages/api/ai/code/complete.ts`, so there is exactly one
@@ -8,8 +8,8 @@
 
 /** System-prompt half: the dialect rules that hold for every ClickHouse request. */
 export const CLICKHOUSE_LOGS_COMPLETION_INSTRUCTIONS = `
-# Supabase logs SQL (ClickHouse)
-You are writing SQL for Supabase logs, which run on a ClickHouse-backed engine. This is NOT Postgres and NOT BigQuery. Output valid ClickHouse SQL only.
+# NileBase logs SQL (ClickHouse)
+You are writing SQL for NileBase logs, which run on a ClickHouse-backed engine. This is NOT Postgres and NOT BigQuery. Output valid ClickHouse SQL only.
 - All logs are in a single table named \`logs\`, keyed by a \`source\` column. There are no per-service tables (no \`edge_logs\`, \`postgres_logs\`, and so on) and no \`unnest\` joins.
 - Per-source fields live in the \`log_attributes\` Map(String, String), read as \`log_attributes['key']\`. Map values are strings, so wrap numeric ones in \`toInt32OrZero(...)\`.
 - Use ClickHouse functions, not Postgres or BigQuery ones. Use \`match(col, 'regex')\` or \`col ILIKE '%text%'\` instead of \`regexp_contains\`, \`count()\` instead of \`count(*)\`, and select the \`timestamp\` column directly instead of \`cast(timestamp as datetime)\`.

@@ -57,7 +57,7 @@ export const BannerTermsOfServiceUpdate = () => {
             <DialogSection className="text-sm flex flex-col gap-y-2">
               <p>We’ve updated our Terms of Service. The updated terms:</p>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Clarify which Supabase entity you contract with.</li>
+                <li>Clarify which NileBase entity you contract with.</li>
                 <li>
                   Add Supplemental Terms for certain features we may release or to comply with local
                   laws.

@@ -56,7 +56,7 @@ export function buildDucklakeApiConfig(config: DucklakeDestinationConfig): Creat
     return {
       ducklake: {
         // pool_size / metadata_schema live on the catalog so they apply to the selected
-        // Supabase Postgres catalog (the API resolves catalog-level values over top-level).
+        // NileBase Postgres catalog (the API resolves catalog-level values over top-level).
         catalog: {
           type: 'supabase_project',
           project_ref: config.catalogProjectRef,

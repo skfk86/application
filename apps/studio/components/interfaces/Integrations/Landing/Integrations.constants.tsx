@@ -84,7 +84,7 @@ export type IntegrationDefinition = {
     name: string
     websiteUrl: string
   }
-  /** Provenance of the integration — Official (built by Supabase), Partner (formal third-party listing), Community (open-source, not officially endorsed). */
+  /** Provenance of the integration — Official (built by NileBase), Partner (formal third-party listing), Community (open-source, not officially endorsed). */
   source: MarketplaceSource
   requiredExtensions: Array<string>
   /** Optional component to render if the integration requires extensions that are not available on the current database image */
@@ -133,7 +133,7 @@ export type IntegrationDefinition = {
 )
 
 const authorSupabase = {
-  name: 'Supabase',
+  name: 'NileBase',
   websiteUrl: 'https://supabase.com',
 }
 
@@ -645,7 +645,7 @@ const TEMPLATE_INTEGRATIONS: Array<IntegrationDefinition> = [
       { label: 'Creates a new database schema named `stripe`' },
       { label: 'Creates tables and views in the `stripe` schema for synced Stripe data' },
       { label: 'Deploys Edge Functions to handle incoming webhooks from Stripe' },
-      { label: 'Schedules automatic Stripe data syncs using Supabase Queues' },
+      { label: 'Schedules automatic Stripe data syncs using NileBase Queues' },
     ],
     installationCommand: async ({ ref: projectRef, track, stripe_api_key }) => {
       const startTime = Date.now()

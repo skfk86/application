@@ -1,7 +1,7 @@
 import type { ThemeRegistration } from 'shiki'
 
 export const supabaseDark: ThemeRegistration = {
-  name: 'supabase-dark',
+  name: 'nilebase-dark',
   type: 'dark',
   colors: {
     'editor.background': '#00000000',
@@ -19,11 +19,11 @@ export const supabaseDark: ThemeRegistration = {
         'entity.name.tag',
         'support.class.component',
       ],
-      settings: { foreground: '#3ecf8e' },
+      settings: { foreground: '#2DD4BF' },
     },
     {
       scope: ['constant', 'variable.other.constant', 'support.constant'],
-      settings: { foreground: '#3ecf8e' },
+      settings: { foreground: '#2DD4BF' },
     },
     {
       scope: [
@@ -32,7 +32,7 @@ export const supabaseDark: ThemeRegistration = {
         'meta.object-literal.key',
         'entity.other.attribute-name',
       ],
-      settings: { foreground: '#3ecf8e' },
+      settings: { foreground: '#2DD4BF' },
     },
     {
       scope: ['string', 'string.quoted'],
@@ -46,13 +46,13 @@ export const supabaseDark: ThemeRegistration = {
     { scope: ['punctuation'], settings: { foreground: '#ffffff' } },
     { scope: ['constant.numeric'], settings: { foreground: '#ededed' } },
     { scope: ['markup.underline.link'], settings: { foreground: '#ffffff' } },
-    { scope: ['markup.inserted'], settings: { foreground: '#3ecf8e' } },
+    { scope: ['markup.inserted'], settings: { foreground: '#2DD4BF' } },
     { scope: ['markup.deleted'], settings: { foreground: '#F06A50' } },
   ],
 }
 
 export const supabaseLight: ThemeRegistration = {
-  name: 'supabase-light',
+  name: 'nilebase-light',
   type: 'light',
   colors: {
     'editor.background': '#00000000',

@@ -258,7 +258,7 @@ describe('matchRedirect maintenance mode', () => {
     ).toBeNull()
     expect(
       matchRedirect({
-        pathname: '/img/supabase-logo.svg',
+        pathname: '/img/nilebase-logo.svg',
         search: {},
         isPlatform: true,
         maintenanceMode: true,
