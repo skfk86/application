@@ -1,0 +1,35 @@
+name: Build NileBase Studio
+
+on:
+  push:
+    branches: [master, nilebase-studio]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        locale: [en, ar]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Studio image (${{ matrix.locale }})
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/studio/Dockerfile
+          target: production
+          push: false
+          tags: nilebase-studio:${{ matrix.locale }}
+          build-args: |
+            NEXT_PUBLIC_UI_LOCALE=${{ matrix.locale }}
+          cache-from: type=gha,scope=studio-${{ matrix.locale }}
+          cache-to: type=gha,mode=max,scope=studio-${{ matrix.locale }}

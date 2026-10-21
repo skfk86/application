@@ -1,0 +1,11 @@
+NileBase
+This product is a modified version of Supabase Studio and related packages
+from https://github.com/supabase/supabase, licensed under the Apache License,
+Version 2.0 (see LICENSE).
+
+Modifications made by NileBase include: product name, logos and icons, colour
+palette, user-facing text, and Arabic / right-to-left support.
+
+"Supabase" and its logo are trademarks of Supabase, Inc. NileBase is an
+independent product and is not affiliated with, endorsed by, or sponsored by
+Supabase, Inc.

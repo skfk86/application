@@ -1,0 +1,31 @@
+/*
+ * NileBase: Arabic / RTL support.
+ * Enabled at build time with NEXT_PUBLIC_UI_LOCALE=ar (see pages/_document.tsx).
+ * Code, SQL, tables of data and diagrams always stay left-to-right.
+ */
+html[dir='rtl'] body {
+  --font-sans: var(--font-arabic), system-ui, 'Segoe UI', Tahoma, sans-serif;
+  --font-heading: var(--font-arabic), system-ui, 'Segoe UI', Tahoma, sans-serif;
+  font-family: var(--font-sans);
+}
+
+html[dir='rtl'] pre,
+html[dir='rtl'] code,
+html[dir='rtl'] kbd,
+html[dir='rtl'] samp,
+html[dir='rtl'] .monaco-editor,
+html[dir='rtl'] .monaco-diff-editor,
+html[dir='rtl'] .rdg,
+html[dir='rtl'] .react-flow,
+html[dir='rtl'] .cm-editor,
+html[dir='rtl'] input[type='email'],
+html[dir='rtl'] input[type='url'],
+html[dir='rtl'] input[type='password'] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Directional icons that point "forward" or "back" should mirror in RTL. */
+html[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,33 @@
+{
+  "name": "NileBase Studio",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "remoteEnv": {
+    "NEXT_PUBLIC_UI_LOCALE": "ar",
+    "NODE_OPTIONS": "--max-old-space-size=8192",
+    "NEXT_TELEMETRY_DISABLED": "1",
+    "STUDIO_PORT": "8082"
+  },
+  "postCreateCommand": "npm install -g pnpm@11.13.1 && pnpm install --frozen-lockfile",
+  "postAttachCommand": "echo 'Run: ./scripts/start-full-stack.sh  then: pnpm --filter studio run dev:next'",
+  "forwardPorts": [
+    8082,
+    8000
+  ],
+  "portsAttributes": {
+    "8082": {
+      "label": "NileBase Studio",
+      "onAutoForward": "openBrowser"
+    },
+    "8000": {
+      "label": "Backend API gateway"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  }
+}
